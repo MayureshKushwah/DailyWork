@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="bootStrap1CSS.css">
+
+<script>
+function myFunction() {
+  var y = document.forms["mayu"]["txt1"].value;
+  var z = document.forms["mayu"]["txt2"].value;
+  var x = y * z;
+
+
+  document.getElementById("demo").innerHTML = "Total cost=" +  x ;
+}  
+  
+</script>
+
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1>My First Webpage  Page</h1>
+  <p>Resize this responsive page to see the effect!</p>
+</div>
+
+<form name="mayu">
+<div class="container">
+ <div class="row">
+  <div class="input-group lg-6">
+    
+    <input type="text" class="form-control" placeholder="Product Name" required>
+  </div>
+
+  <div class="input-group lg-6" style="margin-top:10px;">
+    <input name="txt1" type="number" class="form-control" placeholder="Quantity" required>
+    
+  </div>
+   <div class="input-group lg-6" style="margin-top:10px;">
+    <input name="txt2" type="number" class="form-control" placeholder="Price" required>
+    
+  </div>
+  <div>
+  
+  <input type="button"  onclick="myFunction()" value="Total Cost" style="margin-top:2px;">
+  <span id="demo"></span>  
+ 
+
+
+
+  </div>
+ </div>
+ <div class="row">
+    <div class="input-group lg-12" style="margin-top:10px;">
+	 	<button type="submit"class="btn btn-primary"  >Insert</button>
+        <button type="button" class="btn btn-warning" style="margin-left:10px;">Delete All</button>
+		
+  </div>
+    </div>
+
+  <div class="row">
+  <div class="input-group lg-6" style="margin-top:10px;">
+	 
+      	<input type="text" placeholder="Search.." name="search" style="width:96%">
+        <button type="submit"><i class="fa fa-search"></i></button>
+  </div>
+
+
+
+  </div>
+
+ </div>
+</form>
+<div class="container" style="margin-top:40px;">
+ 
+             
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th></th>
+		
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>specs</td>
+        <td>20</td>
+        <td style="colspan"><button type="submit"><i class="fa fa-trash"></i></button><button style="margin-left:5px;" type="submit"><i class="fa fa-edit"></i></button></td>
+      </tr>
+      <tr>
+        <td>Apple</td>
+        <td>20</td>
+        <td style="colspan"><button type="submit"><i class="fa fa-trash"></i></button><button style="margin-left:5px;" type="submit"><i class="fa fa-edit"></i></button></td>
+      </tr>
+      <tr>
+        <td>pad</td>
+        <td>20</td>
+        <td style="colspan"><button type="submit"><i class="fa fa-trash"></i></button><button style="margin-left:5px;" type="submit"><i class="fa fa-edit"></i></button></td>
+      </tr>
+	  <tr>
+        <td>Mouse</td>
+        <td>15</td>
+        <td style="colspan"><button type="submit"><i class="fa fa-trash"></i></button><button style="margin-left:5px;" type="submit"><i class="fa fa-edit"></i></button></td>
+      </tr>
+	  <tr>
+        <td>Table</td>
+        <td>15</td>
+       <td style="colspan"><button type="submit"><i class="fa fa-trash"></i></button><button style="margin-left:5px;" type="submit"><i class="fa fa-edit"></i></button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
