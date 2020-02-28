@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+
+    <script>
+
+        function dis(val) {
+            document.getElementById("result").value += val
+           
+        }
+
+
+        function solve() {
+            let x = document.getElementById("result").value
+            let y = eval(x)
+            document.getElementById("result").value = y
+        }
+
+
+        function clr() {
+            document.getElementById("result").value = ""
+        } 
+    </script>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>My Calculator</h1>
+        <p>calculate here...make you life easy</p>
+    </div>
+    <form style="border: 1px solid red">
+        <div class="container">
+            <div class="row" style="margin:10px;">
+                <div class="col-md-9">
+                    <input type="number" class="form-control" placeholder="Enter Number" id="result" />
+                </div>
+
+                <div class="col-md-3">
+                    <input class="btn btn-danger form-control" type="button" value="CE" onclick="clr()" />
+                </div>
+
+            </div>
+            <div class="row" style="margin:10px;">
+                <div class="col-md-3">
+                    <input type="button" class="form-control" value="1" onclick="dis('1')" />
+                </div>
+                <div class="col-md-3">
+                    <input class="form-control" type="button" value="2" onclick="dis('2')" />
+                </div>
+                <div class="col-md-3">
+                    <input type="button" class="form-control" value="3" onclick="dis('3')" />
+                </div>
+                <div class="col-md-3">
+                    <input type="button" class="btn btn-success form-control" value="/" onclick="dis(' / ')" />
+                </div>
+
+            </div>
+            <div class="row" style="margin:10px;">
+                <div class="col-md-3">
+                    <input type="button" class="form-control" value="4" onclick="dis('4')" />
+                </div>
+                <div class="col-md-3">
+                    <input class="form-control" type="button" value="5" onclick="dis('5')" />
+                </div>
+                <div class="col-md-3">
+                    <input type="button" class="form-control" value="6" onclick="dis('6')" />
+                </div>
+                <div class="col-md-3">
+                    <input type="button" class="btn btn-success form-control" value="+" onclick="dis('+')" />
+                </div>
+            </div>
+            <div class="row" style="margin:10px;">
+                <div class="col-md-3">
+                    <input type="button" class="form-control" value="7" onclick="dis('7')" />
+                </div>
+                <div class="col-md-3">
+                    <input class="form-control" type="button" value="8" onclick="dis('8')" />
+                </div>
+                <div class="col-md-3">
+                    <input type="button" class="form-control" value="9" onclick="dis('9')" />
+                </div>
+                <div class="col-md-3">
+                    <input type="button" class="btn btn-success form-control" value="*" onclick="dis('*')" />
+                </div>
+            </div>
+
+            <div class="row" style="margin:10px;">
+                <div class="col-md-3">
+                    <input type="button" class="form-control" value="." onclick="dis('.')" />
+                </div>
+                <div class="col-md-3">
+                    <input class="form-control" type="button" value="0" onclick="dis('0')" />
+                </div>
+                <div class="col-md-3">
+                    <input type="button" class="btn btn-danger form-control" value="=" onclick="solve()" />
+                </div>
+                <div class="col-md-3">
+                    <input type="button" class="btn btn-success form-control" value="-" onclick="dis('-')" />
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
