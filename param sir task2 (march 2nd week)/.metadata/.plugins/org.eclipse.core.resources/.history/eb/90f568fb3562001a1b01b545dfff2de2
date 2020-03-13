@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<fieldset>
+<form action="processData.jsp">
+<input type="text" name="t1" placeholder="Enter An Int Value"/><br/>
+<input type="submit"/>
+</form>
+
+</fieldset>
+</body>
+</html>

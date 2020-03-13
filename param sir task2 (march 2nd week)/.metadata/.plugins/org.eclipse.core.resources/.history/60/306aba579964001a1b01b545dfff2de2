@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+
+<body>
+<button value="click me" onclick="ChangeContent()"/>
+</body>
+<script type="text/javascript">
+function  ChangeContent() {
+	document.title="web app 20";
+}
+
+</script>
+
+</html>

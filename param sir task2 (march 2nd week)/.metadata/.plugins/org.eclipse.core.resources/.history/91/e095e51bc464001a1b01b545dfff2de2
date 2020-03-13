@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+<employee eid="101">
+<name>Geeta</name>
+<salary>24000</salary>
+
+</employee>
+<employee eid="103">
+<name>Babita</name>
+<salary>45000</salary>
+</employee>
+</employees>

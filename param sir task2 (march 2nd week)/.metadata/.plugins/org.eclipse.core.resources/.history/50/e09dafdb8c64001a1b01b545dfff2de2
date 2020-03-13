@@ -1,0 +1,13 @@
+package concept;
+
+public class Concepts1 {
+	public int i;
+	public Exapmle(int i) {
+		this.i=1;
+	}
+	public static void main(String...ar) {
+		Exapmle a1=new Exapmle(334);
+		Exapmle a2=null;
+		System.out.println(a2.i);//...............?????
+	}
+}

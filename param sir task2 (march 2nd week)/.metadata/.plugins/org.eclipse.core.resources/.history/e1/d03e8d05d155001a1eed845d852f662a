@@ -1,0 +1,26 @@
+package com.cts.training.day6;
+
+public class Tread1 implements Runnable {
+	 
+	 @Override
+		public void run() {
+		 for(int i=1; i<10;i++)
+			 
+		 {
+			
+	           int td=1;
+	           td = td*i;
+				
+			 System.out.println("Thread-1:"+td);
+			 }
+			 try
+			 {
+				 Thread.sleep(2000);
+			 }
+			 catch (InterruptedException e)
+			 {
+				  e.printStackTrace();
+			 }
+		 }
+		}
+

@@ -1,0 +1,5 @@
+
+public class LoginBean {
+	private String userName, password;
+
+}

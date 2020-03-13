@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+	<form name="lf" action="" onsubmit="validate()">
+		<input type="text" name="userName" placeholder="Enter username" /><br />
+		<input type="password" name="password" placeholder="Enter password" /><br />
+		<input type="submit" value=" submit" />
+	</form>
+</body>
+<script type="text/javascript">
+	function sayHello() {
+	document.write("<h1>hello good Afternoon All</h1>");
+	document.write("<h1>Todays date:"+new Date()+"</h1>");
+	}
+function validate() {
+	
+ var name=document.lf.userName.value.trim(); //trim function will not allow spaces
+ var password = document.lf.password.value.trim();
+ 
+ if(name==""){
+	 alert("UserName must not be empty");
+ }
+ if(password==""){
+	 alert("Password should not be empty");
+ }
+
+}	
+	
+</script>
+
+
+</html>

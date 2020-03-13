@@ -1,0 +1,32 @@
+package package3;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+public class TryCatchClass {
+	
+	
+	public class Edemo4{
+		public void readData() throws IOException{
+			FileReader fr = new FileReader("emp.txt");
+			int i = fr.read();
+			System.out.println("hi"+i);
+			
+		}
+		public void task2() throws IOException{
+			readData();
+		}
+	}
+
+	public static void main(String[] args) {
+		TryCatchClass demo4 = new TryCatchClass();
+		try {
+			demo4.task2();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+           System.out.println("End of main");
+	}
+
+}

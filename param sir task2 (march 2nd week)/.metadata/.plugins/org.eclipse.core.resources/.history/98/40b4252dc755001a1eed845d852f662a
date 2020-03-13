@@ -1,0 +1,10 @@
+package com.cts.training.day6;
+
+public class Resource {
+	public void display(String name) {
+		for (int i = 1; i <= 5; i++) {
+			System.out.println("Name count:" + i + "-" + name);
+		}
+	}
+
+}

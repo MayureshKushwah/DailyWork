@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var A= prompt("Enter an int value");
+int B=prompt("Enter an int value");
+alert(A+B);
+
+</script>
+</body>
+</html>

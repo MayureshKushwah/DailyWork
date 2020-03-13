@@ -1,0 +1,38 @@
+package com.cts.training.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.cts.training.calculator.CalculatorClass;
+
+public class Calculator {
+	
+
+	private CalculatorClass calculator;
+	@Before
+	public void init() {
+		calculator = new CalculatorClass();
+		System.out.println("Object Created!!!");
+	}
+	@After
+	public void destroy() {
+		calculator=null;
+		System.out.println("Object Destroyed");
+		
+	}
+
+	@Test
+	public void test_add_success() {
+      assertEquals(17, calculator.add(12, 5));
+		
+	}
+	@Test
+	public void test_sub_success() {
+      assertEquals(17, calculator.sub(12, 5));
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.cts.training.tests;
+
+public class Logic1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = 2+3+"java";
+		System.out.println(str);
+
+	}
+
+}

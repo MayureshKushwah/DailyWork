@@ -1,0 +1,41 @@
+package com.mayuWeb2;
+
+import java.io.IOException;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+//we can use class.forName and connect but that will be specific for one database only to make it general we use this method for database connectivity
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+
+public class ConnectionServlet extends HttpServlet {
+	String user,password,url, driver;
+	Connection con;
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+         user = config.getInitParameter("userName");
+         password = config.getInitParameter("password");
+         url = config.getInitParameter("url");
+         driver = config.getInitParameter("driver");
+         
+         try {
+			Class.forName(driver);
+			con= DriverManager.getConnection(url, user, password);
+			System.out.println(con);
+			} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("hello form service");
+	}
+
+}

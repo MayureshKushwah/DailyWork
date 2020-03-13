@@ -1,0 +1,188 @@
+package com.cts.training;
+import java.util.Scanner;
+
+public class Employee {
+	private int phNo, EmpNo;
+	private String name, designation, address;
+	
+	
+
+	public int getPhNo() {
+		return phNo;
+	}
+
+
+
+	public void setPhNo(int phNo) {
+		this.phNo = phNo;
+	}
+
+
+
+	public int getEmpNo() {
+		return EmpNo;
+	}
+
+
+
+	public void setEmpNo(int empNo) {
+		EmpNo = empNo;
+	}
+
+
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public String getDesignation() {
+		return designation;
+	}
+
+
+
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+        Salary E1 = new Salary();
+        System.out.println("Enter Employee no.");
+        E1.setEmpNo(input.nextInt());
+        System.out.println("Enter Employee Name");
+        E1.setName(input.next());
+        System.out.println("Enter Employee Designation");
+        E1.setDesignation(input.next());
+        System.out.println("Enter Employee Address");
+        E1.setAddress(input.next()); 
+        System.out.println("Enter Phone no.");
+        E1.setPhNo(input.nextInt());
+        
+        System.out.println(E1.getEmpNo()+"  "+
+        E1.getName()+"  "+
+        E1.getDesignation()+"  "+
+        E1.getAddress()+"  "+
+        E1.getPhNo());
+        
+        E1.GetData1();
+        System.out.println("Enter Salary");
+        E1.setSalary(input.nextInt());
+	}
+
+}
+class Salary extends Employee
+{
+ private int salary, BasicPay, DA, HRA, GrossPay, PF, Tax, NetPay;
+
+public int getSalary() {
+	return salary;
+}
+
+public void setSalary(int salary) {
+	this.salary = salary;
+}
+
+ void GetData1()
+ {
+	 System.out.println(getEmpNo()+"  "+
+		        getName()+"  "+
+		        getDesignation()+"  "+
+		        getAddress()+"  "+
+		        getPhNo()+"  +""Basic="+getBasicPay());
+	 
+ }
+
+
+
+
+
+
+
+
+
+public int getBasicPay() {
+	return BasicPay;
+}
+
+public void setBasicPay(int basicPay) {
+	BasicPay = basicPay;
+}
+
+
+
+
+public int getDA() {
+	return DA;
+}
+
+public void setDA(int dA) {
+	DA = dA;
+}
+
+public int getHRA() {
+	return HRA;
+}
+
+public void setHRA(int hRA) {
+	HRA = hRA;
+}
+
+public int getGrossPay() {
+	return GrossPay;
+}
+
+public void setGrossPay(int grossPay) {
+	GrossPay = grossPay;
+}
+
+public int getPF() {
+	return PF;
+}
+
+public void setPF(int pF) {
+	PF = pF;
+}
+
+public int getTax() {
+	return Tax;
+}
+
+public void setTax(int tax) {
+	Tax = tax;
+}
+
+public int getNetPay() {
+	return NetPay;
+}
+
+public void setNetPay(int netPay) {
+	NetPay = netPay;
+}
+
+ 
+ 
+ 
+}

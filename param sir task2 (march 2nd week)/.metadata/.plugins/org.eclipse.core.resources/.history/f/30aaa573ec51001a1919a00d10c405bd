@@ -1,0 +1,89 @@
+package com.cts.training;
+import java.util.Scanner;
+
+public class Employee {
+	private int phNo, EmpNo;
+	private String name, designation, address;
+	
+	
+
+	public int getPhNo() {
+		return phNo;
+	}
+
+
+
+	public void setPhNo(int phNo) {
+		this.phNo = phNo;
+	}
+
+
+
+	public int getEmpNo() {
+		return EmpNo;
+	}
+
+
+
+	public void setEmpNo(int empNo) {
+		EmpNo = empNo;
+	}
+
+
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public String getDesignation() {
+		return designation;
+	}
+
+
+
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+        Employee E1 = new Employee();
+        System.out.println("Enter Employee no.");
+        E1.setEmpNo(input.nextInt());
+        System.out.println("Enter Employee Name");
+        E1.setName(input.next());
+        System.out.println("Enter Employee Designation");
+        E1.setDesignation(input.next());
+        System.out.println("Enter Employee Address");
+        E1.setAddress(input.next()); 
+        System.out.println("Enter Phone no.");
+        E1.setPhNo(input.nextInt());
+        
+        
+        
+        
+	}
+
+}

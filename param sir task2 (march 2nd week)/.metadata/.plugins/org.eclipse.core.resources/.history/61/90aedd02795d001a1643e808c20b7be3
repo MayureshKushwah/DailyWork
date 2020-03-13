@@ -1,0 +1,22 @@
+package testPrograms;
+
+import java.util.ArrayList;
+
+public class Ans2StudentObjectInArrayList {
+
+
+	public static void main(String[] args) {
+	
+		ArrayList<Double> obj = new ArrayList<>();
+		obj.add(90.7);
+		obj.add(70.8);
+		obj.add(55.5);
+		obj.add(40.6);
+		
+		for(Double object:obj) {
+			System.out.println(obj.get(0));
+		}
+
+	}
+
+}

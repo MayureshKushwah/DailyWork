@@ -1,0 +1,63 @@
+package testPrograms;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import javax.swing.text.AbstractDocument.BranchElement;
+
+public class Ans4_1Reusult {
+
+	public static void highestScorer(ArrayList<String> list) {
+		String[] arrOfStr;
+		
+		for (int j = 0; j < list.size(); j++) {
+		
+		 arrOfStr =list.get(j).split("_");
+		 int sum =sum+Array.get(arrOfStr, 0);
+		
+		}
+		System.out.println(Array.get(arrOfStr, 0));
+ 
+//		for (int j = 0; j < list.size(); j++) {
+//			int sum=0;
+//			int length = list.get(j).length();
+//			String result = "";
+//			String str = list.get(j);
+//			for (int i = 0; i < length; i++) {
+//				Character character = str.charAt(i);
+//				if (Character.isDigit(character)) {
+//					result += character;
+//					String[] arrOfStr = str.split("_");
+//					int a=Integer.parseInt(String.valueOf(character));
+//					sum= sum+a;
+//				}
+//			}
+//			System.out.println("result is: " + sum);
+//
+//		}
+
+	}
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		ArrayList<String> list = new ArrayList<>();
+		BufferedReader bin = new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("Enter no of Records ie value of n:");
+		int n = Integer.parseInt(bin.readLine());
+
+		for (int i = 0; i < n; i++) {
+			list.add(bin.readLine());
+
+		}
+		System.out.println("ArrayList contains: " + list);
+		
+		highestScorer(list);
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package dateTimeAPITask;
+
+public class FindDateAfter1Week {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
