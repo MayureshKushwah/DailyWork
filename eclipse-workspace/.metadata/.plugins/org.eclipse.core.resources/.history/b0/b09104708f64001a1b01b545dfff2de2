@@ -1,0 +1,10 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<BODY>
+<h1>
+This is demo of XHTML, it only give output if all the tags are properly closed as well as the case of the opening and closing tag should be same otherwise it will give error
+</h1>
+</BODY>
+
+</html>

@@ -1,0 +1,16 @@
+<taglib>
+
+<tlib>1.0</tlib>
+<jsp-version></jsp-version>
+
+<tag>
+
+<name>printDate</name>
+
+
+<tag-class>com.cts.customTag.TagHandler</tag-class>
+</tag>
+
+
+
+</taglib>

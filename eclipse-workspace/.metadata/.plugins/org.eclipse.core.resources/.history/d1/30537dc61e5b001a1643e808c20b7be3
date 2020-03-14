@@ -1,0 +1,34 @@
+package com.cts.training.day10;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+
+
+public class EmployeeStream {
+	public static void main(String[] args) {
+	
+	ArrayList<Employee> employees = new ArrayList<>();
+	
+	addEmployees(employees);
+	//1. Employees with Age Greater than 20
+	List<Employee> ageFilter = employees.stream().filter(e -> e.getAge()>20).collect(Collectors.toList());
+	System.out.println("Employee with age Greater than 20");
+	ageFilter.forEach(System.out::println);
+	}
+	
+	private static void addEmployees(ArrayList<Employee> employees) {
+	
+	Employee emp1 = new Employee(105, "Vijay", "Bangalore", "Developer", 20, 41241.89, 79879798L);
+	Employee emp2 = new Employee(101, "Neeraj", "Mumbai", "Software Engineer", 21, 23434.89, 121313L);
+	Employee emp3 = new Employee(501, "Sakshi", "Indore", "Test Engineer", 19, 19889.80, 979879798L);
+	Employee emp4 = new Employee(301, "Neha", "Pune", "DevOps Engineer", 23, 68908.12, 43432222L);
+	Employee emp5 = new Employee(301, "Neha", "Pune", "DevOps Engineer", 23, 68908.12, 43432222L);
+	employees.add(emp1);
+	employees.add(emp2);
+	employees.add(emp3);
+	employees.add(emp4);
+	employees.add(emp5);
+}
+}

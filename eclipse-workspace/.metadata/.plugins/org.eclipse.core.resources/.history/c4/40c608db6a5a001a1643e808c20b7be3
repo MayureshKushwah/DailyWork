@@ -1,0 +1,26 @@
+package com.cts.training.dao.impl;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.BeforeClass;
+import org.junit.jupiter.api.Test;
+
+import com.cts.training.bean.Employee;
+
+class EmployeTest {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+	private static EmployeeDAO employeeDAO;
+	private static Employee employee;
+
+	@BeforeClass
+	public static void init() {
+		employee = new Employee();
+		employeeDAO = new EmployeeDAOImpl();
+	}
+
+}

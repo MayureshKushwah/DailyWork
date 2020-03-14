@@ -1,0 +1,19 @@
+package com.cts.training.day6;
+
+public class Resource2 {
+	public void display(String name) {
+		synchronized (this) { //this synchronise block allocates this to one thread at a time 
+
+		
+		for (int i = 1; i <= 5; i++) {
+			System.out.println("Name count:" + i + "-" + name);
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}}
+	}
+
+}

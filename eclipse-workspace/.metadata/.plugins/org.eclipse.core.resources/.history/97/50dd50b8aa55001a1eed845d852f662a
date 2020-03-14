@@ -1,0 +1,16 @@
+package com.cts.training.day6;
+
+public class MainThread {
+
+	public static void main(String[] args) {
+		System.out.println(Thread.currentThread().getName());
+	
+		
+		
+		//System.out.println(t);
+//System.out.println(t.getName());
+//System.out.println("Is DAemon?"+t.isDaemon());
+//System.out.println("Is Alive?"+t.isAlive());
+	}
+
+}

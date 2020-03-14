@@ -1,0 +1,18 @@
+package com.cts.training.day6;
+
+public class ThreadInterfaceDemo {
+
+	public static void main(String[] args) {
+		InterfaceThreadOne threadone = new InterfaceThreadOne();
+		InterfaceThreadTwo threadtwo = new InterfaceThreadTwo();
+		Thread t1 = new Thread(threadone);
+		Thread t2 = new Thread(threadtwo);
+		Thread.currentThread().setPriority(Thread.MAX_PRIORITY-2);
+		t1.start();
+		t2.start();
+		System.out.println("Main Thread Priority:"+Thread.currentThread().getPriority());
+		System.out.println("Thread-1 priority:"+t1.getPriority());
+		System.out.println("Thread-2 pririty:"+t2.getPriority());
+	}
+
+}

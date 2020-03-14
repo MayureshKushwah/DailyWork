@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+var message = "hello nikhil ? if you are on tik tok ? share link";
+var data = message.split("?");
+console.log(data);
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+var cities=["Indore", "pune", "mumbai", "banglore", "hyderabad"];
+document.write("<br/><br/>"+cities);
+var city = cities.slice(3,5);
+document.write("<br/><br/>"+city);
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

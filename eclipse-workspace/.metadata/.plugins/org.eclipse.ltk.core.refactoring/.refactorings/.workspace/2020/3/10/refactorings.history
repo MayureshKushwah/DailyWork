@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ExampleServlet&apos; to &apos;RequestDispatcherExample&apos;" description="Rename resource &apos;ExampleServlet&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ExampleServlet" name="RequestDispatcherExample" stamp="1583533922336" updateReferences="true"/>
+</session>

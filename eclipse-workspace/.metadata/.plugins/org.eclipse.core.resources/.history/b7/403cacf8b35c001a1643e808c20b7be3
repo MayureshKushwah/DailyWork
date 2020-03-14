@@ -1,0 +1,17 @@
+package package3;
+
+public class RuntimeInput {
+
+	public static void main(String[] args) {
+int i =0;
+if(i==0) {
+			System.out.print("java");
+		}
+		else
+		{
+			System.out.print("I like ");
+		}
+		}
+	
+
+}

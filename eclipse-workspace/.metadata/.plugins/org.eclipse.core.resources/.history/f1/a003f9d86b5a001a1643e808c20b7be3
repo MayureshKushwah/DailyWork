@@ -1,0 +1,24 @@
+package com.cts.training.dao.impl;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.cts.training.bean.Employee;
+
+public class EmployeeTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+	
+	private static EmployeeDAO employeeDAO;
+	private static Employee employee;
+	
+	public static void init() {
+		employee = new Employee();
+		employeeDAO = new EmployeeDAOImpl();
+	}
+
+}

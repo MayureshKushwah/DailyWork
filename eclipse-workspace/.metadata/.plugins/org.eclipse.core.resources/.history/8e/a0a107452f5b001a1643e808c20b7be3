@@ -1,0 +1,60 @@
+package dateTimeAPI;
+
+import java.time.LocalDate;
+
+public class DateAndTimeApiTask {
+
+	public static void main(String[] args) {
+
+		// Example 1 - How to get today's date in Java 8
+		LocalDate date = LocalDate.now();
+		System.out.println("today's date is :" + date);
+
+		// Example 2 - How to get current day, month and year in Java 8
+		LocalDate date1 = LocalDate.now();
+		int day = date1.getDayOfMonth();
+		int month = date1.getMonthValue();
+		int year = date1.getYear();
+
+		System.out.printf("Year : %d , Month : %d , Day : %d \t %n", year, month, day);
+
+		// Example 3 - How to get a particular date in Java 8
+		LocalDate birthday = LocalDate.of(1985, 01, 10);
+
+		System.out.println("Your birthday is :" + birthday);
+		
+		//Example 4 - How to check if two dates are equal in Java 8
+		LocalDate today=LocalDate.now();
+		LocalDate birthday2=LocalDate.of(1985, 01, 10);
+		
+		if(birthday2.equals(today))
+		{
+			System.out.printf("Today %s and birthday %s are same dates %n",today,birthday2);
+		}
+		else
+		{
+			System.out.println("Dates are not Equal");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

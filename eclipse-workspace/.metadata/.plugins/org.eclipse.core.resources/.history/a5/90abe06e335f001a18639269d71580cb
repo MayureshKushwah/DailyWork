@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+	<servlet>
+		<servlet-name>dhoni</servlet-name>
+		<servlet-class> com.mayuWeb2.SourceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dhoni</servlet-name>
+		<url-pattern>/ss</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>cs</servlet-name>
+		<servlet-class> com.mayuWeb2.ConnectionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>cs</servlet-name>
+		<url-pattern>/cs</url-pattern>
+	</servlet-mapping>
+</web-app>

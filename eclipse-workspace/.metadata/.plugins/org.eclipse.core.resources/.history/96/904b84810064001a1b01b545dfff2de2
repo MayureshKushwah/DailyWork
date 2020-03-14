@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+var cities= ["pune", "indore", "latur","Banglore"];
+console.log(cities);
+var employee=new Array("Rohit", "Mohit" , "Yuvi", "virushka", "pulkit");
+
+
+
+    var output = [];
+    for (var i = 0; i< employee.length; i++){
+        output.push(employee.pop());
+    }
+        for(int j=(output.length);j>0;j--){
+        	console.log(output[j]);
+        	}
+ 
+
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

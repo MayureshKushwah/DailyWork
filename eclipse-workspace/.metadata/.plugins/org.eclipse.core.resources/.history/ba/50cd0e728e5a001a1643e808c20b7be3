@@ -1,0 +1,67 @@
+package com.cts.training.day10;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class StreamAPI {
+
+	public static void main(String[] args) {
+
+		ArrayList<String> names = new ArrayList<String>();
+		addNames(names);
+		// 1. print Names with lengh more than 6
+		List<String> nameList = names.stream().filter(s -> s.length() > 6).collect(Collectors.toList());
+		System.out.println("------------------Names with length greater than 6-------------------");
+		nameList.forEach(System.out::println);
+		// System.out.println(nameList);
+		
+		System.out.println("------------------Names in UpperCase-------------------");
+		// 2. Names in Upper Case
+		List<String> namesInUpper = names.stream().map(s -> s.toUpperCase()).collect(Collectors.toList());
+		namesInUpper.forEach(System.out::println);
+	
+	    long count = names.stream().count();
+	    System.out.println("List Count is:"+ count);
+	    List<Integer> data= Stream.of(1,11,111,1111,11111);
+	
+	}
+
+	private static void addNames(ArrayList<String> names) {
+		names.add("Mayuresh");
+		names.add("Nikhil");
+		names.add("Harshita");
+		names.add("Pulkit");
+		names.add("Sakshi");
+		names.add("Anubhuti");
+		names.add("Abhishek");
+
+	}
+}
+
+//		ArrayList<Integer> list = new ArrayList<Integer>();
+//		Scanner sc = new Scanner(System.in);
+//
+//		list.add(20);
+//		list.add(40);
+//		list.add(35);
+//		list.add(80);
+//		list.add(62);
+//
+//		System.out.println(list+"\n");
+//		for(int i=0;i<(list.size());i++){
+//			if(list.get(i)%2==0 && list.get(i)%5==0) {
+//				System.out.println(list.get(i));
+//			}
+//			
+//		}
+//		System.out.println("\n Double Elements");
+//		for(Integer obj : list) {
+//			System.out.println(obj*2);
+//		}
+//		
+//	}
+//
+//}

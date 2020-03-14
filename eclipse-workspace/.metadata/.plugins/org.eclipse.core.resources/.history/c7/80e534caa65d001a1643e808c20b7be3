@@ -1,0 +1,5 @@
+package webApp1;
+
+public class GreetingServlet {
+
+}

@@ -1,0 +1,24 @@
+package dateTimeAPI;
+
+import java.time.LocalDate;
+
+public class DateAndTimeApiTask {
+
+	public static void main(String[] args) {
+		
+		//Example 1 - How to get today's date in Java 8
+		LocalDate date=LocalDate.now();
+		System.out.println("today's date is :"+date);
+		
+		//Example 2 - How to get current day, month and year in Java 8
+		LocalDate date1=LocalDate.now();
+		int day=date1.getDayOfMonth();
+		int month=date1.getMonthValue();
+		int year=date1.getYear();
+		
+		System.out.printf("Year : %d , Month : %d , Day : %d \t %n",year,month,day);
+
+
+	}
+
+}

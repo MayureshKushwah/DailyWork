@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE employees SYSTEM "employees.dtd">
+<employees>
+<employee eid='101' lang="Java">
+
+<name>Geeta</name>
+<salary>24000</salary>
+<!-- <designation>Software Developer</designation>
+ -->
+</employee>
+<employee eid='102' >
+<name>Babita</name>
+<salary>45000</salary>
+</employee>
+</employees>

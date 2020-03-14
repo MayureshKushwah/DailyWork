@@ -1,0 +1,25 @@
+package package3;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class ProgramLogics {
+
+	public static void main(String[] args) {
+      Map<Integer , String> map = new HashMap<>();
+      map.put(234567, "rahul$$");
+      map.put(946546, "kartik@&");
+      map.put(545123, "bumra@2");
+      System.out.println(map);
+      
+      Iterator<String> list= new ArrayList();
+      while(list.hasNext()) {
+    	  String element = list.next();
+    	  System.out.println(element);
+      }
+      
+	}
+
+}

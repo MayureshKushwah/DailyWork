@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Ex. of for loop</h1>
+<script type="text/javascript">
+for(let i=0;i<=10;i++){
+	console.log(i);
+}
+console.log(i); //with let key word the scope will be upto that for loop only so it will give error, we can use var in place of let to make that i available outside to loop
+
+
+</script>
+
+</body>
+</html>
